@@ -1,0 +1,4 @@
+type Todo {
+	isDone: Boolean
+	task: String
+}
