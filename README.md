@@ -2,29 +2,27 @@
 
 This is an _unofficial_ TypeScript template for [Create React App](https://github.com/facebook/create-react-app) with [Relay](https://relay.dev/) essentials preinstalled.
 
-To use this template, fetch the repository and add `--template file:cra-template-typescript-relay` when creating a new app.
-
-For example, assuming this repo is in your workspace:
+To use this template run:
 
 ```sh
-npx create-react-app my-app --template file:cra-template-typescript-relay
+npx create-react-app my-app --template git+https://github.com/yaanno/cra-template-typescript-relay.git
 
 # or
 
-yarn create react-app my-app --template file:cra-template-typescript-relay
+yarn create react-app tempapp --template git+https://github.com/yaanno/cra-template-typescript-relay.git
 ```
 
 Once your app has been built, update your `package.json` with your `schema` file:
 
 ```json
 "relay": {
-    "language": "typescript",
+  "language": "typescript",
 	"src": "./src/",
 	"schema": "./schema.graphql"
   },
 ```
 
-And for convenience:
+Make Relay available for scripting:
 
 ```json
 "scripts": {
@@ -33,6 +31,13 @@ And for convenience:
     "relay": "yarn run relay-compiler",
   }
 ```
+
+Relay + React + TypeScript specific "issues" handled by:
+
+- `template/.babelrc`: making sure Babel understands Relay
+- `template/src/react-app.d.ts`: making sure `graphql` type system is available via import
+
+A test schema added for convenience
 
 For more information, please refer to:
 
