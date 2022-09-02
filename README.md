@@ -9,7 +9,7 @@ npx create-react-app my-app --template git+https://github.com/yaanno/cra-templat
 
 # or
 
-yarn create react-app tempapp --template git+https://github.com/yaanno/cra-template-typescript-relay.git
+yarn create react-app my-app --template git+https://github.com/yaanno/cra-template-typescript-relay.git
 ```
 
 Once your app has been built, update your `package.json` with your `schema` file:
