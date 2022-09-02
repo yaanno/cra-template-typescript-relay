@@ -11,15 +11,14 @@
   "description": "TypeScript template for Create React App with Relay support.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/facebook/create-react-app.git",
-    "directory": "packages/cra-template-typescript"
+    "url": "https://github.com/yaanno/cra-template-typescript-relay"
   },
   "license": "MIT",
   "engines": {
     "node": ">=14"
   },
   "bugs": {
-    "url": "https://github.com/facebook/create-react-app/issues"
+    "url": "https://github.com/yaanno/cra-template-typescript-relay/issues"
   },
   "files": [
     "template",

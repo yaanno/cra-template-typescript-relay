@@ -30,7 +30,7 @@ And for convenience:
 "scripts": {
     "start": "yarn run relay && react-scripts start",
     "build": "yarn run relay && react-scripts build",
-    "relay": "yarn run relay-compiler"
+    "relay": "yarn run relay-compiler",
   }
 ```
 
